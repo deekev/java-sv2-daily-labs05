@@ -16,7 +16,7 @@ public class Cinema {
         List<String> titles = new ArrayList<>();
         for (Movie movie: movies) {
             for (LocalDateTime date: movie.getTimeOfScreening()) {
-                if (date.isEqual(time)) {
+                if (date.equals(time)) {
                     titles.add(movie.getTitle());
                 }
             }
